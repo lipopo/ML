@@ -10,7 +10,9 @@ from tensorflow import keras
 import tensorflow as tf
 
 # local model
+import ssl
 
+ssl._create_default_https_context = ssl._create_unverified_context
 # print tensorflow's version
 print("tensorlfow version: {}".format(tf.__version__))
 
