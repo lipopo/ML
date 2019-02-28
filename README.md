@@ -14,8 +14,8 @@
 - eager execution eager_execution.py
 - 自动微分 automatic_differentiation.py
 - 自定义训练 custom_train.py
-- 自定义训练 custom_layer.py
-
+- 自定义测 custom_layer.py
+- 自定义训练 custom_train2.py
 
 ## 分支说明
 ### develop 开发分支
