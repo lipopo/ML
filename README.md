@@ -13,6 +13,8 @@
 
 - eager execution eager_execution.py
 - 自动微分 automatic_differentiation.py
+- 自定义训练 custom_train.py
+
 
 ## 分支说明
 ### develop 开发分支
