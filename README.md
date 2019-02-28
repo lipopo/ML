@@ -8,3 +8,8 @@
 - 文本分类 classification2.py
 - 回归 regression.py
 - 保存和恢复模型 save_model.py
+
+### 研究和实验
+
+- eager execution eager_execution.py
+
