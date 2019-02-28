@@ -12,6 +12,7 @@
 ### 研究和实验
 
 - eager execution eager_execution.py
+- 自动微分 automatic_differentiation.py
 
 ## 分支说明
 ### develop 开发分支
