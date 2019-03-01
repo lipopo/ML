@@ -67,6 +67,7 @@ plt.show()
 def train(model, inputs, outputs, learning_rate):
     with tf.GradientTape() as t:
         current_loss = error_function(model(inputs), outputs)
+    # 计算变量的变化
     dW, db = t.gradient(current_loss, [model.W, model.b])
     model.W.assign_sub(learning_rate * dW)
     model.b.assign_sub(learning_rate * db)
