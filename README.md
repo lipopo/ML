@@ -17,5 +17,9 @@
 - 自定义测 custom_layer.py
 - 自定义训练 custom_train2.py
 
+### 图像识别
+
+- pix2pix image_pix2pix.py
+
 ## 分支说明
 ### develop 开发分支
