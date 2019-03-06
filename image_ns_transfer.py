@@ -74,7 +74,7 @@ class NSModel(keras.Model):
     
         self.conv = keras.layers.Conv2D(32, (4, 4), padding="same")
         self.dconv = keras.layers.Conv2DTranspose(32, (4, 4), padding="same")
-
+        self.concat = keras.layers.Concatenate()
         self.output_ = keras.layers.Conv2D(3, (4, 4),padding="same")
 
     def call(self, x1, x2=None):
@@ -94,7 +94,7 @@ class NSModel(keras.Model):
             x2_ = self.conv(x2_)
             x2_ = self.conv(x2_)
             x2_ = self.conv(x2_)
-            x1_ = (x1_ + x2_) / 2
+            x1_ = self.concat([x1_, x2_])
         x1_ = self.dconv(x1_)
         x1_ = self.dconv(x1_)
         x1_ = self.dconv(x1_)
